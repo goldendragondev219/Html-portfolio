@@ -1,0 +1,852 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<meta charset="utf-8">
+<style>
+body{
+		  font-family: 'IBM Plex Sans', sans-serif;
+	}
+	part{ 
+		width: 100%;
+		display: 
+		;
+		padding-bottom: 50px;
+	}
+	part {
+	    display: flex;
+	    flex-wrap: wrap;
+	    align-items: flex-start;
+	    align-content: flex-start;
+	    justify-content: center;
+	    padding-top: 55px;
+	}
+	block{
+		width: 33%;
+		float: left;
+	}
+
+	block img {
+	    width: 5vw;
+	    height: auto;
+	    mix-blend-mode: exclusion;
+	    margin: 0 auto;
+	    filter: contrast(4) brightness(1.56) saturate(0.1);
+	    border-radius: 1.5vw;
+	    /* opacity: 0.5; */
+	}
+
+	part {
+	    display: flex;
+	    flex-wrap: wrap;
+	    align-items: flex-start;
+	    align-content: flex-start;
+	    justify-content: center;
+	}
+
+	block {
+	    text-align: center;
+	    padding-bottom: 52px;
+	}	
+	p.slide {
+	    padding: 331px 145px;
+	    font-size: 25px;
+	}
+
+	img.center {
+	    display: block;
+	    margin: 0px auto;
+	    width: 131px;
+	}
+	fmenu {
+	    width: calc(100% - 8vh);
+	    position: fixed;
+	    backdrop-filter: blur(2px);
+	    bottom: 0px;
+	    z-index: 200;
+	    padding: calc(0.3vw + 0.7vh) 4vh;
+	    background: linear-gradient(356deg, #000000, #a60042c4);
+	}
+
+	.flex-container {
+	    padding: 0px;
+	    width: 100%;
+	    display: flex;
+	    flex-flow: row wrap;
+	    justify-content: space-around;
+	    padding-top: 163px;
+	    padding-bottom: 143px;
+	    background: #d7d7d7;
+	}
+	blk {
+	    color: #e54b07;
+	}
+	div.logo {
+	    /* background: url(img/netfx.jpg); */
+	    width: 178px;
+	    height: 100px;
+	    background-size: cover;
+	    font-size: 67px;
+	    margin: 0 auto;
+	    color: #000000;
+	}
+	.flex-item {
+	    width: 24%;
+	    height: auto;
+	    /* backdrop-filter: blur(4px); */
+	    min-height: 0;
+	    padding: 2vw;
+	    border-radius: 3vw !important;
+	    padding-top: 10px;
+	    eight: 182px;
+	    transition: 0.3s all cubic-bezier(0.67, -0.64, 0.14, 1.34);
+	    margin-bottom: 32px;
+	    /* border-radius: 100px; */
+	    /* background: #20202045; */
+	    border-radius: 5px;
+	    /* box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.45); */
+	    text-align: center;
+	    display: table-cell;
+	    z-index: 1;
+	    vertical-align: middle;
+	}
+.fmenu a {
+    width: 200px !IMPORTANT;
+    display: block;
+}
+
+a span {
+    display: block;
+    width: max-content;
+}
+
+fmenu a {
+    display: block;
+    width: max-content;
+    float: left;
+    color: #ffad78;
+    text-decoration: none;
+} 
+	span.date {
+	    font-size: 13px;
+	    float: right;
+	}
+block {
+    text-align: center;
+    padding-bottom: 52px;
+    color: #ffbdbd;
+    mix-blend-mode: normal;
+    margin: 2%;
+    border-radius: 9px;
+    padding: 4% 1%;
+    letter-spacing: 0.5px;
+    width: 22%;
+    background: #0000008f;
+}
+.flex-item img {
+    max-width: 12vw;
+    max-height: 5vw;
+    height: auto;
+    padding: 0vw;
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+    width: auto;
+    filter: contrast(0.8) brightness(1.2);
+    /* mix-blend-mode: soft-light; */
+    background: #ffffff14;
+    opacity: 1;
+    border-radius: 1vw;
+}
+a.wa {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+
+	a.wa img {
+	    margin-top: 0.4vw;
+	    /* margin-bottom: -11px; */
+	} 
+	.flex-item a {
+	    text-decoration: blink;
+	    display: block;
+	    font-size: 20px;
+	    text-transform: uppercase;
+	    font-size: 1.2vw;
+	    color: #ffad74;
+	    font-weight: bold;
+	    margin-bottom: 9px;
+	}
+	h2{
+		text-align: center;
+	}
+	.wa img {
+	    width: 20px;
+	    border-radius: 5px;
+	    margin-right: 10px;
+	  
+	}
+
+	a.wa {
+	    font-size: 1.4vw !important;
+	    text-decoration: none;
+	    letter-spacing: 0.1vw;
+	    z-index: 2;
+	    color: #ffad73 !important;
+	    font-weight: bold;
+	    margin-top: 0vw !important;
+	    background: linear-gradient(357deg, #000000, #42002ecf);
+	}
+
+	block {
+	    font-size: 1.3vw;
+	    letter-spacing: 1px;
+	    background: rgb(3 3 3 / 65%);
+	    box-shadow: 2px 10px 26px 4px rgb(0 0 0 / 73%);
+	    border: 1px solid #552806;
+	    color: #ffffff;
+	    /* font-weight: 900; */
+	    margin-bottom: 83px;
+	    line-height: 11pt;
+	    backdrop-filter: blur(4px);
+	}
+	span {
+	    display: block;
+	}	
+	img.aleft {
+	    float: left;
+	    width: 318px;
+	    margin: 20px;
+	    border-radius: 7px;
+	    filter: drop-shadow(2px 4px 6px black);
+	}	
+
+.paralax {
+    background-attachment: fixed !important;
+    background-size: 83vw !important;
+    background-position: center !important;
+}
+.paralax p {
+    width: 54%;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 1.3vw;
+    background: #1608016e;
+    backdrop-filter: blur(4px);
+    text-align: left;
+    padding: 26px 13px 23px 30px;
+    line-height: 1.5vw;
+    border-radius: 21px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.centerp {
+    width: 95%;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    font-size: 23px;
+    padding-top: 48px;
+}
+
+element.style {
+}
+p.slide.mtop {
+    padding-top: 35px;
+    margin-top: 31px;
+    backdrop-filter: blur(2px);
+}
+body {
+    background: #ffffff;
+    color: #000;
+}
+
+a.wa {
+    font-size: 5vw;
+    text-decoration: none;
+    color: #af8541;
+    margin-top: 3vw;
+    background: linear-gradient(357deg, #000000, #a60074cf);
+}
+body {
+    margin: 0;
+}
+.centerp {
+    padding: 0 6% 63px;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    width: 88%;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    background: #fff;
+    text-align: justify;
+    background: #ffffff;
+    padding-top: 48px;
+    color: #000000;
+}
+.paralax {
+    background-attachment: fixed !important;
+    background-size: 100vw !important;
+    box-shadow: aliceblue;
+    background-position: center !important;
+    box-shadow: 0px 0px 29px 1px rgb(0 31 79);
+    padding: 25vh 0;
+}
+img.aleft {
+    float: left;
+    width: 318px;
+    margin: 20px 70px 24px 20px;
+    border-radius: 7px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+img.center.logo {
+    /* position: fixed; */
+    z-index: 200;
+    top: -27px;
+    mix-blend-mode: plus-lighter;
+    /* filter: contrast(0.8) brightness(6) hue-rotate(104deg); */
+}
+
+img.aleft.avatar {
+    border-radius: 600px;
+    width: 9vw;
+    margin-top: 4vw;
+    border: 5px solid;
+    border-color: #fff;
+}
+h3 {
+    color: #fff;
+    /* font-weight: 100; */
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0px;
+    background: linear-gradient(182deg, #000000, #be004cc4);
+    z-index: 2000;
+    box-shadow: 10px 10px 13px 0px rgb(17 0 45 / 44%);
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 4vw;
+}
+an {
+    font-size: 1.3vw;
+    color: #fff;
+    line-height: 1.5vw;
+    font-weight: 00;
+}
+.wa span {
+    margin-top: 0px;
+    display: inline-block;
+    margin-bottom: 0.5vw;
+}
+
+h3 {
+    color: #ff9b67;
+    font-weight: 100;
+    font-size: 1vw;
+    text-transform: uppercase;
+    line-height: 1.3vw;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    /* font-family: trebuchet ms; */
+    /* font-style: italic; */
+}
+
+darken, lighten {
+    position: fixed;
+    mix-blend-mode: unset;
+    left: 0;
+    width: 100vw;
+    margin-top: -25vh;
+    z-index: 0;
+    position: absolute;
+    content: ' ';
+    background: #06020096;
+}
+
+darken,lighten{
+	transition: 1s all ease;
+}
+lighten {
+    background: rgb(201 165 193 / 25%);
+}
+ru{
+	display: none;
+}
+en{
+	display: none;
+}
+he{
+	display: none;
+}
+ul.lans {
+    width: max-content;
+    text-align: center;
+    position: absolute;
+    right: 3vh;
+    padding-left: 0px;
+    margin: 0px;
+    /* top: 71vh; */
+}
+
+ul.lans li {
+    list-style-type: none;
+    margin: 0 2px;
+    width: 2vw;
+    display: inline-block;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+ul.lans li img{
+  width: 100%;
+  z-index: 222;
+}
+ul.lans li:hover{
+    transform: scale(1.2);
+}
+.container {
+    perspective: 1000px;
+    overflow-y: scroll;
+    height: 400px; /* Задайте высоту контейнера, чтобы сделать его прокручиваемым */
+}
+
+.block {
+    background-color: #eaeaea;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    transform-origin: bottom center;
+}
+
+.part {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("background.jpg"); /* Замените "background.jpg" на путь к вашему изображению фона */
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes flicker {
+  0% {
+    background-color: rgba(142, 87, 129, 0.31);
+  }
+  50% {
+    background-color: rgba(142, 87, 129, 0.32);
+  }
+  100% {
+    background-color: rgba(142, 87, 129, 0.33);
+  }
+}
+ 
+/* Применение анимации к элементу */
+lighten {
+ /* animation: flicker 0.1s infinite; */
+}
+ul.menu {
+    list-style: none;
+    color: #ffad76;
+}
+
+ul.menu li {
+    /* float: left; */
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.05vw;
+    display: inline-block;
+    margin-right: 1vw;
+}
+
+ul.menu {
+    float: left;
+    margin-top: -0.2vh;
+    margin-bottom: 0px;
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+    position: fixed;
+}
+
+
+
+ul.menu li:hover {transform: scale(1.1);color: #fff;}
+
+ul.menu li {
+    cursor: pointer;
+    transition: 0.3s all ease;
+} 
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+	    var windowHeight = $(window).height();
+
+	    $(window).scroll(function() {
+	        $('.block').each(function() {
+	            var scrollPos = $(this).offset().top - $(window).scrollTop();
+
+	            if (scrollPos < windowHeight) {
+	                var rotation = (scrollPos / windowHeight) * 90; // Угол поворота блока
+	                $(this).css('transform', 'rotateX(' + rotation + 'deg)');
+	            }
+	        });
+	    });
+
+	    
+	});
+
+	$(document).ready(function(e){
+		function rs(){
+			$('darken,lighten').each(function(e) { 			    
+			    h = $(this).parent().outerHeight();
+				
+
+			    $(this).css('height',h+'px');
+
+			});	
+		}
+
+		$(window).resize(function(e){
+			rs();
+		});
+		$(this).css('height',5+'px');
+		setTimeout(function(){rs()},1000);
+		
+		var userLanguage = navigator.language || navigator.userLanguage;
+		if (userLanguage.startsWith("ru")) {
+		  lan = 'ru';
+		} else if (userLanguage.startsWith("en")) {
+		  lan = 'en';
+		} else if (userLanguage.startsWith("he")) {
+		  lan = 'he';
+		}
+
+		$(lan).show();
+
+		$('ul.lans li').click(function(){
+			$('ru').hide();
+			$('en').hide();
+			$('he').hide();
+			lan = $(this).attr('class');
+			$(lan).show();
+		});
+ 
+		$('.menu li').click(function(){
+		  var id = $(this).attr('id');
+		  var element = $('.' + id); 
+		  h = element.height();
+		  $('html, body').animate({
+		    scrollTop: element.offset().top-h
+		  }, 1500, 'easeInOutExpo'); // Adjust the scroll speed as needed
+		});
+	});
+</script>
+<part class='slide paralax'  style='background: url("./imgs/111.jpg");'>
+	<darken></darken> 
+	<header>
+		<img src='logo.png' class='center logo'>
+	</header>
+	<!-- <img src='3.webp' class='aleft avatar'> -->
+	<p class='slide mtop'>
+		<en>We thank you for your attention to our laboratory. We offer IT services for creating original products - stylishly, qualitatively, and quickly.</en>
+
+ 		<ru>Мы благодарим вас за внимание к нашей лаборатории. Мы предлагаем услуги в области информационных технологий по созданию оригинального продукта – стильно, качественно и быстро.</ru>
+
+		<he>אנחנו מודים לכם על תשומת הלב למעבדה שלנו. אנחנו מציעים שירותי טכנולוגיות מידע ליצירת מוצר מקורי - בסטייל, באיכות גבוהה ובמהירות. </he>
+	</p>
+
+</part>
+<!--part class='slide paralax'  style='background: url(4.webp);'-->
+<h2 class='serv black'> <ru>Услуги</ru>
+     <en>Services</en>
+      <he>שירותים</he>
+</h2>
+<part class='slide paralax' style='background: url("./imgs/5.jpg");'>
+	<lighten></lighten> 
+	<p>
+		<en>If you are interested in services such as creating online stores, business card websites, blogs, integrating your products, creating and implementing custom systems that can increase profit, you have come to the right laboratory.</en>
+		<ru>Если вас интересуют услуги по созданию интернет-магазинов, сайтов визиток, блогов, интеграции ваших продуктов, созданию и внедрению индивидуальных систем, способных увеличить прибыль, вы зашли в правильную лабораторию.</ru>
+		<he>אם אתם מתעניינים בשירותים כגון יצירת חנויות מקוונות, אתרי כרטיסי ביקור, בלוגים, אינטגרציה של המוצרים שלכם, יצירה ויישום של מערכות מותאמות אישית שיכולות להגדיל רווח, אתם הגעתם למעבדה הנכונה.</he>
+	</p>
+</part>
+<h2 class='adva'><ru>Приемущества</ru><en>Advantages</en><he>יתרונות  </he></h2>
+<p class='centerp'>
+	<en>Our professionalism, as well as a personalized approach to the wishes and tasks of our clients in any of the projects, guarantees the highest quality of the final result. Regardless of the level and complexity of the client's requirements and tasks.</en>
+	<ru>Наш профессионализм, а также персональный подход к пожеланиям и задачам наших клиентов в любом из проектов гарантирует высочайшее качество итогового результата. Вне зависимости от уровня и сложности желания заказчика и поставленных им задач.</ru>
+	<he>המקצועיות שלנו, כמו גם הגישה האישית למשא ומתן של לקוחותינו בכל אחד מהפרויקטים, מבטיחה את האיכות הגבוהה ביותר של התוצאה הסופית. בלתי תלויה ברמה וברמת הקושי של דרישות הלקוח והמשימות שהוצבו עליו.</he>
+</p>
+<!--part class='slide paralax'style='background: url(6.webp);'-->
+
+<part class='slide paralax' style='background: url("./imgs/4.jpg");'>
+	<p>
+		<en>We understand how important it is to have a beautiful and user-friendly website, so we guarantee a professional approach to each project. Whether you need a website for a workshop or an online store, we are ready to help.</en>
+		<ru>Мы понимаем, насколько важно иметь красивый и удобный сайт, поэтому мы гарантируем профессиональный подход к каждому проекту. Независимо от того, нужен ли вам сайт для мастерской или онлайн-магазин, мы готовы помочь.</ru>
+		<he>אנחנו מבינים כמה חשוב להיות לכם אתר יפה ונוח למשתמשים, ולכן אנחנו מבטיחים גישה מקצועית לכל פרויקט. בין שאתם זקוקים לאתר לסדנה או לחנות מקוונת, אנחנו מוכנים לעזור.</he>
+	</p> 
+</part>
+
+
+
+ 
+
+<part class='slide paralax' style='background: url("./imgs/222.jpg");'>
+	<lighten></lighten> 
+	<block>	
+		<img src='high-quality.png'>
+		<h3><en>Quality</en><ru>Качество</ru><he>איכות</he></h3>
+		<en>Control over the product to meet your needs, desires, and goals.</en>
+		<ru>Контроль за соответствием продукта, который соответствует Вашим потребностям, желаниям и целям.</ru>
+		<he>שליטה על המוצר כך שיעניק את הצרכים, הרצונות והמטרות שלך.</he>
+	</block>
+
+	<block>
+		<img src='fast-time.png'>
+		<h3><en>Time</en><ru>Время</ru><he>זמן</he></h3>
+		<en>Quick and efficient decision-making on customer tasks. Providing multiple design layouts, monitoring the implementation, and adjusting technical tasks. 24/7 contact with the coordinator.</en>
+		<ru>Быстрое и грамотное принятие решений по поставленным задачам клиента. Предоставление нескольких вариантов дизайна, контроль выполнения и корректировка технических задач. Контакт с координатором 24/7.</ru>
+		<he>קבלת החלטות מהירות ויעילות על המשימות של הלקוח. הצגת מספר פריסות עיצוב, מעקב והתאמה של משימות טכניות. יצירת קשר עם המתאם 24/7.</he>
+	</block>
+
+	<block>
+		<img src='customer-review.png'>
+		<h3><en>Experience</en><ru>Опыт</ru><he>ניסיון</he></h3>
+		<en>High and in-depth knowledge in the world of IT technologies and related sciences to business processes at all levels of our specialists.</en>
+		<ru>Высокие и глубокие знания в мире IT-технологий и смежных наук до бизнес-процессов на всех уровнях наших специалистов.</ru>
+		<he>ידע גבוה ועמוק בעולם טכנולוגיות המידע ומדעים קשורים לתהליכי עסקים בכל הרמות של המומחים שלנו.</he>
+	</block>
+
+	<block>
+		<img src='analytics.png'>
+		<h3><en>Price</en><ru>Цена</ru><he>מחיר</he></h3>
+		<en>Fast, multi-level, and well-developed financial assessment, technical, economic, and effective components at the ordering stage.</en>
+		<ru>Быстрая, многоуровневая и проработанная финансовая оценка, технической, экономической и эффективной составляющей на этапе заказа.</ru>
+		<he>הערכה פיננסית מהירה, מרובת שלבים ומפותחת היטב, הכוללת מרכיבים טכניים, כלכליים ויעילים בשלב ההזמנה.</he>
+	</block>
+
+	<block>
+		<img src='leader.png'>
+		<h3><en>Standards</en><ru>Стандарты</ru><he>תקנים</he></h3>
+		<en>We always exceed standards!</en>
+		<ru>Мы всегда превосходим стандарты!</ru>
+		<he>אנחנו תמיד חורגים מהתקנים!</he>
+	</block>
+
+	<block>
+		<img src='translation.png'>
+		<h3><en>Multi-Language</en><ru>На нескольких языках</ru><he>במספר שפות</he></h3>
+		<en>Professional approach to implementing and developing multilingual solutions based on the client's desired languages.</en>
+		<ru>Грамотный подход к внедрению и разработке многоязычных решений на языках, желаемых клиентом.</ru>
+		<he>גישה מקצועית ליישום ופיתוח פתרונות מרובי שפות על פי השפות הרצויות של הלקוח.</he>
+	</block>
+
+	<block>
+		<img src='taxes.png'>
+		<h3><en>Various Plans</en><ru>Различные тарифы</ru><he>תוכניות שונות</he></h3>
+		<en>Plans to meet your needs and budget.</en>
+		<ru>Планы, соответствующие вашим потребностям и бюджету.</ru>
+		<he>תוכניות שמתאימות לצרכים ולתקציב שלך.</he>
+	</block>
+
+	<block>
+		<img src='role-model.png'>
+		<h3><en>Confidentiality</en><ru>Конфиденциальность</ru><he>סודיות</he></h3>
+		<en>We are ready to keep your secrets without revealing them!</en>
+		<ru>Мы готовы сохранить ваши секреты, не раскрыв их!</ru>
+		<he>אנחנו מוכנים לשמור על הסודות שלך מבלי לחשוף אותם!</he>
+	</block>
+
+	<block>
+		<img src='responsive.png'>
+		<h3><en>For All Devices</en><ru>Для всех устройств</ru><he>עבור כל התקנים</he></h3>
+		<en>Computer, tablet, and smartphone.</en>
+		<ru>Компьютер, планшет и смартфон.</ru>
+		<he>מחשב, טאבלט וסמארטפון.</he>
+	</block>
+	
+	<block>
+		<img src='conversation.png'>
+		<h3><en>Free Consultations</en><ru>Бесплатные консультации</ru><he>ייעוץ חינם</he></h3>
+		<span><en>On modeling, development, and implementation of IT business.</en></span>
+		<ru>По моделированию, разработке и внедрению бизнеса в IT.</ru>
+		<he>במודלים, פיתוח ויישום של עסקים ב-IT.</he>
+	</block>
+</part>
+
+	<p class='centerp'>
+		<ru>В Нашей лаборатории работают опытные и талантливые разработчики, маркетологи, экономисты, социологи, дизайнеры, которые готовы работать с вами для достижения ваших целей. Мы всегда открыты к общению и готовы помочь вам достичь успеха в интернете. В случае заключения с нами контракта все они будут задействованы в работе над Вашим проектом, вне зависимости от его размера. Мы создадим впечатляющий IT продукт, который позволит вам соответствовать реалиям времени и конкурентной способности на любом из рынков.</ru>
+		<en>In our laboratory, experienced and talented developers, marketers, economists, sociologists, and designers work who are ready to work with you to achieve your goals. We are always open to communication and ready to help you succeed on the internet. In case of signing a contract with us, all of them will be involved in working on your project, regardless of its size. We will create an impressive IT product that will enable you to meet the demands of time and competitive capability in any market.</en>
+		<he>במעבדתנו עובדים מפתחי תוכנה מנוסים ומוכשרים, שיווקנים, כלכלנים, סוציולוגים ומעצבים המוכנים לעבוד איתך כדי להשיג את המטרות שלך. אנחנו תמיד פתוחים לתקשורת ומוכנים לעזור לך להצליח באינטרנט. במקרה של החתמת חוזה איתנו, כולם ייכללו בעבודה על הפרויקט שלך, ללא קשר לגודלו. אנחנו ניצור מוצר טכנולוגי מרשים שיאפשר לך להתאים לדרישות הזמן וליכולת התחרותית בכל שוק.</he>
+	</p>
+	<part class='slide paralax' style='background: url("./imgs/333.jpg");'>
+		<darken></darken>
+		<!-- <img src='2.webp' class='aleft avatar'> -->
+
+		<p class='slide  mtop'>
+			<ru>Мы ждем Вас, если вы готовы создать впечатляющий продукт, который будет выделяться среди конкурентов!</ru>
+			<en>We are waiting for you if you are ready to create an impressive product that will stand out among competitors!</en>
+			<he>אנחנו מחכים לך אם אתה מוכן ליצור מוצר מרהיב שידגיש בין המתחרים!</he>
+		</p>
+	</part>
+	
+	<h2 class='prod'><he>מוצרים </he><en>Products</en><ru>Продукты</ru></h2>
+	<part class='slide paralax' style='background: url("./imgs/9.jpg");'>
+		<lighten></lighten>
+		<block><img src='landing-page.png'><h3><en>Landing Page</en><ru>Сайт визитка</ru><he>דף נחיתה</he></h3></block>
+		<block><img src='online-shopping.png'><h3><en>Online Store</en><ru>Интернет магазин</ru><he>חנות מקוונת</he></h3></block>
+		<block><img src='augmented-reality.png'><h3><en>VR Tour</en><ru>VR тур</ru><he>סיור VR</he></h3></block>
+		<block><img src='cms.png'><h3><en>Websites and Blogs based on Wordpress and other CMS</en><ru>Сайты и блоги на основе Wordpress и другой CMS</ru><he>אתרים ובלוגים המבוססים על פלטפורמת וורדפרס ותכנות תוכן אחרות</he></h3></block>
+		<block><img src='discussion.png'><h3><en>Forums and Boards</en><ru>Форумы и доски</ru><he>פורומים ולוחות</he></h3></block>
+		<block><img src='9345279.png'><h3><en>3D Media Modeling</en><ru>3D медиа моделирование</ru><he>דגם מדיה בתלת מימד</he></h3></block>
+		<block><img src='multimedia.png'><h3><en>Media Audio/Video Production</en><ru>Медиа аудио/видео продукция</ru><he>הפקת מדיה אודיו/וידאו</he></h3></block>
+		<block><img src='collaborate.png'><h3><en>Integration and Additions of Interested Blocks to Existing IT Products</en><ru>Интеграция и дополнения интересующих Вас блоков к существующим IT продуктам</ru><he>שיוך והוספת חלקים מעניינים למוצרי IT קיימים</he></h3></block>
+	</part>
+
+</part>
+
+ <h2 class='work'><ru>Наши работы</ru><en>Our Works</en><he>העבודות שלנו</he></h2>
+<div class="flex-container colorfull paralax" style='background: url("./imgs/444.jpg");'><darken></darken>
+
+	<div class='flex-item'>
+		<a href="http://gfli.space" target="_blank"><img src='./archive/user-location.png'></a>
+		<an>
+			<a href="http://gfli.space" target="_blank"><ru>GISNES</ru><en>GISNES</en><he>GISNES</he></a>
+			<ru>Карты для бизнеса</ru>
+			<en>Business Maps</en>
+			<he>מפות לעסקים</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="https://hotdox.site" target="_blank"><img src="./archive/digital-signature.png" style='padding: 2vw'></a>
+		<an>
+			<a href="https://hotdox.site" target="_blank"><ru>Hotdox</ru><en>Hotdox</en><he>Hotdox</he></a>
+			<ru>Виртуальные бланки, оборот документов, электронная подпись</ru>
+			<en>Virtual Forms, Document Workflow, Electronic Signature</en>
+			<he>טפסים וירטואליים, זרימת מסמכים, חתימה אלקטרונית</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="http://key-pay.ru" target="_blank"><img src="./archive/phone.png"></a>
+		<an>
+			<a href="http://key-pay.ru" target="_blank"><ru>Key-Pay</ru><en>Key-Pay</en><he>Key-Pay</he></a>
+			<ru>Биллинговая, и платежная система контроля и учета</ru>
+			<en>Billing and Payment Control and Accounting System</en>
+			<he>מערכת לחיוב ושליטה בתשלומים ולהפקת דוחות פיקוח</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="http://numeca-ru.com" target="_blank"><img src="./archive/data-science.png"></a>
+		<an>
+			<a href="http://numeca-ru.com" target="_blank"><ru>numeca-ru.com</ru><en>numeca-ru.com</en><he>numeca-ru.com</he></a>
+			<ru>Сайт научной компании</ru>
+			<en>Website for Scientific Company</en>
+			<he>אתר לחברה מדעית</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="http://zahita.net" target="_blank"><img src="./archive/support.png"></a>
+		<an>
+			<a href="http://zahita.net" target="_blank"><ru>zahita.net</ru><en>zahita.net</en><he>zahita.net</he></a>
+			<ru>Игровой форум</ru>
+			<en>Gaming Forum</en>
+			<he>פורום משחקים</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="http://fxnet.space/lunasa" target="_blank"><img src="./archive/apartment.png"></a>
+		<an>
+			<a href="http://fxnet.space/lunasa" target="_blank"><ru>Lunasa</ru><en>Lunasa</en><he>Lunasa</he></a>
+			<ru>Создаем "Купольные дома"</ru>
+			<en>Creating "Dome Homes"</en>
+			<he>יוצרים "בתים כיפיים"</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="http://2-fc.com" target="_blank"><img src="./archive/photo-gallery.png"></a>
+		<an>
+			<a href='http://2-fc.com' target="_blank"><ru>Медиа галлерея</ru><en>Media Gallery</en><he>גלריית מדיה</he></a>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="https://fxnet.space/tour/" target="_blank"><img src='./archive/360-view.png'></a>
+		<an>
+			<a href="https://fxnet.space/tour/" target="_blank"><ru>Shadrinsk City VR</ru><en>Shadrinsk City VR</en><he>Shadrinsk City VR</he></a>
+			<ru>VR 360 Тур</ru>
+			<en>VR 360 Tour</en>
+			<he>סיור VR 360</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="https://environmental-eco-management.com/" target="_blank"><img src='./archive/loan.png'></a>
+		<an>
+			<a href="https://environmental-eco-management.com/" target="_blank"><ru>Environmental Eco Management</ru><en>Environmental Eco Management</en><he>Environmental Eco Management</he></a>
+			<ru>Инвест презентация</ru>
+			<en>Investment Presentation</en>
+			<he>מצגת השקעה</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="http://isralife.site/"><img src="./archive/newspaper.png"></a>
+		<an>
+			<a href="http://isralife.site/"><ru>Isralife</ru><en>Isralife</en><he>Isralife</he></a>
+			<ru>Авто новостные ленты</ru>
+			<en>Auto News Feeds</en>
+			<he>חדשות אוטומוטיות</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="http://ravitzit.com/"><img src="./archive/business-card.png"></a>
+		<an>
+			<a href="http://ravitzit.com/"><ru>Ravitz-it</ru><en>Ravitz-it</en><he>Ravitz-it</he></a>
+			<ru>Сайт визитка</ru>
+			<en>Business Card Website</en>
+			<he>אתר ביקורת</he>
+		</an>
+	</div>
+	<div class="flex-item">
+		<a href="https://fxnet.space/escape/"><img src="./archive/3d-video-icon.png"></a>
+		<an>
+			<a href="https://fxnet.space/escape/"><ru>Escape</ru><en>Escape</en><he>Escape</he></a>
+			<ru>3D Видео</ru>
+			<en>3D Video</en>
+			<he>וידאו תלת ממדי</he>
+		</an>
+	</div>
+</div>
+   
+	 
+		<fmenu> 
+			  <a href="https://wa.me/?t=+972504391406" target="_blank">
+	 			<span>05-04-391-406</span>
+	   		 </a>
+	   		 
+	   		 <ul class='menu'>
+	   		 	<li id='serv'><he>שירותים</he><en>Services</en><ru>Услуги</ru></li>
+	   		 	<li id='prod'><he>מוצרים </he><en>Products</en><ru>Продукты</ru></li>
+	   		 	<li id='work'><ru>Наши работы</ru><en>Our Works</en><he>העבודות שלנו</he></li>
+	   		 	<li id='adva'><ru>Приемущества</ru><en>Advantages</en><he>יתרונות  </he></li>
+	   		 </ul>
+
+	   		 <ul class='lans'>
+				<li class='ru'><img src='https://hotdox.site/ui/ru.png'></li>
+				<li class='en'><img src='https://hotdox.site/ui/en.png'></li>
+				<li class='he'><img src='https://hotdox.site/ui/he.png'></li>  
+			</ul>
+   		</fmenu> 
